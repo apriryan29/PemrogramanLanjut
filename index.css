@@ -1,0 +1,218 @@
+@import url();
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.background{
+    background: url(bg_item.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: transparent;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 13%;
+    background: #9b875b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar a{
+    position: relative;
+    font-size: 16px;
+    color: white;
+    margin-right: 30px;
+    text-decoration: none;
+}
+.navbar a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: -5px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+
+}
+.navbar a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+.pencarian-bar{
+    width: 300px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+.pencarian-bar input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.pencarian-bar button{
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.pencarian-bar input::placeholder{
+    color: white;
+}
+.isian1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    height: 550px;
+    margin-top: 20px;
+    background: #dfd1b4;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.item{
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    color: #fff;
+    background: url(bg_item.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: #110c00;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.icon-sosial a{
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+}
+.isian1 .login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+    color: rgb(71, 55, 24);
+}
+.login .box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.login .box h2{
+    text-align: center;
+    font-size: 25px;
+}
+.box .input-box-login{
+    width: 340px;
+    height: 50px;
+    border-bottom: 1px solid rgb(71, 55, 24);
+    margin: 30px 0;
+    position: relative;
+}
+.input-box-login input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+}
+.input-box-login .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+.input-box-login label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 600px;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.input-box-login:focus~ label,
+.input-box-login:valid~ label{
+    top: -5px;
+}
+.ingat-password{
+    font-size: 14px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.ingat-password a{
+    color: rgb(71, 55, 24);
+    text-decoration: none;
+}
+.ingat-password a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.btn{
+    background: #9b875b;
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.buat-akun{
+    font-size: 14px;
+    text-align: center;
+    margin: 25px;
+}
+.buat-akun p a{
+    color: rgb(71, 55, 24);
+    font-weight: 600px;
+    text-decoration: none;
+}
+.buat-akun p a:hover{
+    text-decoration: underline;
+    color: red;
+    box-shadow: black;
+}
